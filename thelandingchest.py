@@ -286,7 +286,7 @@ def start():
         keyUp(base_settings.interaction)
         # turn(20,-65)
         moveRel(-1300, 0, relative=True)
-        run(2450)   # 2500
+        run(2400)   # 2500
         # turn(20,-21)
         moveRel(-420, 0, relative=True)
         press("1")
