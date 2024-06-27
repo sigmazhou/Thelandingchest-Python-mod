@@ -127,7 +127,7 @@ def enter():
     mouseDown()
     time.sleep(1.2)
     mouseUp()
-    time.sleep(0.2)
+    time.sleep(0.4) # 0.2
 
 
 def color(x, y):
@@ -286,7 +286,7 @@ def start():
         keyUp(base_settings.interaction)
         # turn(20,-65)
         moveRel(-1300, 0, relative=True)
-        run(2500)
+        run(2450)   # 2500
         # turn(20,-21)
         moveRel(-420, 0, relative=True)
         press("1")
@@ -332,6 +332,7 @@ def start():
         # turn(20,50)
         moveRel(1000, 0, relative=True)
         run(run_settings.thelastchest)
+        moveRel(75,0,relative=True)   # extra turn
         moveRel(0, 150, relative=True)
         time.sleep(0.5)
         keyDown(base_settings.interaction)  # 最后一箱子
@@ -430,8 +431,8 @@ else:
 time.sleep(0.2)
 print(base_settings.read)
 time.sleep(0.3)
-print("5秒后开启程序,请手动切到游戏窗口")
-time.sleep(5)
+print("9秒后开启程序,请手动切到游戏窗口")
+time.sleep(9)
 
 if __name__ == "__main__":
     try:
