@@ -286,9 +286,10 @@ def start():
         keyUp(base_settings.interaction)
         # turn(20,-65)
         moveRel(-1300, 0, relative=True)
-        run(2400)   # 2500
+        run(2450)   # 2500
         # turn(20,-21)
         moveRel(-420, 0, relative=True)
+        run(1000)   # 0
         press("1")
         time.sleep(1)
         leftClick()
@@ -298,7 +299,7 @@ def start():
             time.sleep(0.1)
             press(base_settings.swoop)
             time.sleep(2)
-        run(6200)
+        run(5050)   # 6200
         moveRel(0, 150, relative=True)
         time.sleep(0.5)
         keyDown(base_settings.interaction)  # 过桥后箱子
